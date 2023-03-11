@@ -195,11 +195,13 @@ header {
 
 .write-msg {
     hyphens: auto;
-    width: 80%;
-    max-height: 80%;
+    // width: 80%;
+    max-height: 100%;
+    min-height: 60%;
     border-radius: 10px;
     padding: 1%;
     overflow-y: scroll;
+    flex-basis: 80%;
     background-color: $color-text-box;
 
     &::-webkit-scrollbar-track {
@@ -275,6 +277,12 @@ header {
         z-index: 2;
         max-width: 100%;
         transform: translateX(-100%);
+    }
+
+    .write-msg {
+        hyphens: auto;
+        word-break: break-word;
+        flex-basis: 60%;
     }
     header {
         .menu {
